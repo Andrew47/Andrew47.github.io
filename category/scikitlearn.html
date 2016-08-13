@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>Regression Predictive Analysis with Scikit-Learn</title>
+        <title>Andrew's Data Science Blog - scikitlearn</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
@@ -14,28 +14,26 @@
         <header id="banner" class="body">
                 <h1><a href="/">Andrew's Data Science Blog </a></h1>
                 <nav><ul>
-                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="/category/matplotlib.html">matplotlib</a></li>
+                    <li><a href="/category/pandas.html">pandas</a></li>
+                    <li class="active"><a href="/category/scikitlearn.html">scikitlearn</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/regression-predictive-analysis-with-scikit-learn.html" rel="bookmark"
-           title="Permalink to Regression Predictive Analysis with Scikit-Learn">Regression Predictive Analysis with Scikit-Learn</a></h1>
-    </header>
 
-    <div class="entry-content">
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/scikitlearn-regression.html">Regression Predictive Analysis with Scikit-Learn</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2016-08-13T15:30:00+01:00">
                 Published: Sat 13 August 2016
         </abbr>
 
         <address class="vcard author">
-                By                         Andrew Burnie
+                By                         <a class="url fn" href="/author/andrew-burnie.html">Andrew Burnie</a>
         </address>
-
-</footer><!-- /.post-info -->      <style type="text/css">/*!
+<p>In <a href="/category/scikitlearn.html">scikitlearn</a>.</p>
+<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/scikitlearn.html">scikitlearn</a> <a href="/tag/regression.html">regression</a> </p>
+</footer><!-- /.post-info --><style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -610,8 +608,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area
-div.output_area
+div.output_area 
+div.output_area 
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -871,7 +869,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered
+.text_cell.rendered 
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -1037,7 +1035,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [190]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
@@ -1068,7 +1066,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [191]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">boston</span><span class="p">]</span>
@@ -1107,12 +1105,13 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [192]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 
-<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">boston</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">boston</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> 
+                                                    <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1148,7 +1147,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [193]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">linear_model</span>
@@ -1168,7 +1167,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [194]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -1189,7 +1188,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [195]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_1</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LinearRegression</span><span class="p">()</span>
@@ -1200,7 +1199,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[195]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)</pre>
 </div>
@@ -1228,7 +1227,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [196]:</div>
+<div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_1</span><span class="o">.</span><span class="n">coef_</span>
@@ -1238,7 +1237,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[196]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>array([ -1.16869578e-01,   4.39939421e-02,  -5.34808462e-03,
          2.39455391e+00,  -1.56298371e+01,   3.76145473e+00,
@@ -1261,7 +1260,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [197]:</div>
+<div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_1</span><span class="o">.</span><span class="n">intercept_</span>
@@ -1271,9 +1270,9 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[197]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 <div class="output_text output_subarea output_execute_result">
-<pre>36.980455337620683</pre>
+<pre>36.980455337621024</pre>
 </div>
 </div>
 </div>
@@ -1290,7 +1289,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [198]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">labelled_coeffs_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'labels'</span> <span class="p">:</span> <span class="n">boston</span><span class="o">.</span><span class="n">feature_names</span><span class="p">,</span>
@@ -1305,7 +1304,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[198]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <table border="1" class="dataframe">
@@ -1401,7 +1400,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [199]:</div>
+<div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_1</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">])</span>
@@ -1411,7 +1410,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[199]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>array([ 24.95242095])</pre>
 </div>
@@ -1466,7 +1465,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [200]:</div>
+<div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
@@ -1564,7 +1563,7 @@ RSS: 3783.40101386
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [201]:</div>
+<div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_ridge</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
@@ -1575,7 +1574,7 @@ RSS: 3783.40101386
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[201]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>Ridge(alpha=0.5, copy_X=True, fit_intercept=True, max_iter=None,
    normalize=False, random_state=None, solver='auto', tol=0.001)</pre>
@@ -1595,7 +1594,7 @@ RSS: 3783.40101386
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [202]:</div>
+<div class="prompt input_prompt">In [13]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">"Coefficients are: {0}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg_ridge</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
@@ -1680,7 +1679,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [203]:</div>
+<div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_CV</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">RidgeCV</span><span class="p">(</span><span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -1691,7 +1690,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[203]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>RidgeCV(alphas=[0.1, 1.0, 10.0], cv=5, fit_intercept=True, gcv_mode=None,
     normalize=False, scoring=None, store_cv_values=False)</pre>
@@ -1712,7 +1711,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [204]:</div>
+<div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_CV_2</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">RidgeCV</span><span class="p">(</span><span class="n">alphas</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">100</span><span class="p">),</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -1723,7 +1722,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[204]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>RidgeCV(alphas=array([  0.1,   0.2, ...,   9.9,  10. ]), cv=5,
     fit_intercept=True, gcv_mode=None, normalize=False, scoring=None,
@@ -1744,7 +1743,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [205]:</div>
+<div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_CV</span><span class="o">.</span><span class="n">alpha_</span>
@@ -1754,7 +1753,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[205]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>0.1</pre>
 </div>
@@ -1773,7 +1772,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [206]:</div>
+<div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">"Coefficients are: {0}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg_CV</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
@@ -1821,10 +1820,11 @@ Prediction for first house in test dataset: [ 24.960623]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [207]:</div>
+<div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x_train_2</span><span class="p">,</span> <span class="n">x_valid</span><span class="p">,</span> <span class="n">y_train_2</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x_train_2</span><span class="p">,</span> <span class="n">x_valid</span><span class="p">,</span> <span class="n">y_train_2</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> 
+                                                          <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1841,7 +1841,7 @@ Prediction for first house in test dataset: [ 24.960623]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [208]:</div>
+<div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_ridge_01</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span>
@@ -1858,7 +1858,7 @@ Prediction for first house in test dataset: [ 24.960623]
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[208]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>Ridge(alpha=10.0, copy_X=True, fit_intercept=True, max_iter=None,
    normalize=False, random_state=None, solver='auto', tol=0.001)</pre>
@@ -1878,7 +1878,7 @@ Prediction for first house in test dataset: [ 24.960623]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [209]:</div>
+<div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">MSE_ridge_01</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">reg_ridge_01</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_valid</span><span class="p">),</span> <span class="n">y_valid</span><span class="p">)</span>
@@ -1919,7 +1919,7 @@ MSE for alpha = 10 is: 21.5791901245
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [210]:</div>
+<div class="prompt input_prompt">In [21]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
@@ -2162,7 +2162,7 @@ JwwzMyuKE4aZmRXl/wNXwNSE8cjQrgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [211]:</div>
+<div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_lasso</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
@@ -2173,7 +2173,7 @@ JwwzMyuKE4aZmRXl/wNXwNSE8cjQrgAAAABJRU5ErkJggg==
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[211]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>Ridge(alpha=0.5, copy_X=True, fit_intercept=True, max_iter=None,
    normalize=False, random_state=None, solver='auto', tol=0.001)</pre>
@@ -2193,7 +2193,7 @@ JwwzMyuKE4aZmRXl/wNXwNSE8cjQrgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [212]:</div>
+<div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">"Coefficients are: {0}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg_lasso</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
@@ -2241,7 +2241,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [213]:</div>
+<div class="prompt input_prompt">In [24]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_lasso_CV</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LassoCV</span><span class="p">(</span><span class="n">eps</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -2252,7 +2252,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[213]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>LassoCV(alphas=[0.1, 1.0, 10.0], copy_X=True, cv=5, eps=None,
     fit_intercept=True, max_iter=1000, n_alphas=None, n_jobs=1,
@@ -2283,7 +2283,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [214]:</div>
+<div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_lasso_CV_2</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LassoCV</span><span class="p">(</span><span class="n">eps</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -2294,7 +2294,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[214]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>LassoCV(alphas=None, copy_X=True, cv=5, eps=0.001, fit_intercept=True,
     max_iter=1000, n_alphas=100, n_jobs=1, normalize=False, positive=False,
@@ -2316,7 +2316,7 @@ Prediction for first house in test dataset: [ 24.98197093]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [215]:</div>
+<div class="prompt input_prompt">In [26]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">"Alpha is: {0}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">reg_lasso_CV_2</span><span class="o">.</span><span class="n">alpha_</span><span class="p">)</span>
@@ -2375,20 +2375,22 @@ Prediction for first house in test dataset: [ 24.49035948]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [216]:</div>
+<div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="kn">as</span> <span class="nn">cm</span>
 
 
-<span class="n">alphas_lasso</span><span class="p">,</span> <span class="n">coeffs_lasso</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">lasso_path</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">eps</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">alphas_lasso</span><span class="p">,</span> <span class="n">coeffs_lasso</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">lasso_path</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> 
+                                                        <span class="n">eps</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"-Log(alpha)"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"coefficients"</span><span class="p">)</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_color_cycle</span><span class="p">([</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">140</span><span class="p">,</span> <span class="mi">280</span><span class="p">,</span> <span class="mi">20</span><span class="p">)])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_color_cycle</span><span class="p">([</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span> <span class="o">+</span> 
+                   <span class="p">[</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">140</span><span class="p">,</span> <span class="mi">280</span><span class="p">,</span> <span class="mi">20</span><span class="p">)])</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">alphas_lasso</span><span class="p">),</span> <span class="n">coeffs_lasso</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
 
@@ -2401,6 +2403,13 @@ Prediction for first house in test dataset: [ 24.49035948]
 </div>
 <div class="output_wrapper">
 <div class="output">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/andrewburnie/anaconda/envs/ml/lib/python2.7/site-packages/matplotlib/cbook.py:137: MatplotlibDeprecationWarning: The set_color_cycle attribute was deprecated in version 1.5. Use set_prop_cycle instead.
+  warnings.warn(message, mplDeprecation, stacklevel=1)
+</pre>
+</div>
+</div>
 <div class="output_area"><div class="prompt"></div>
 <div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAY8AAAGXCAYAAABLH9wRAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
@@ -2760,7 +2769,7 @@ mYeZmZXm8DAzs9IcHmZmVprDw8zMSnN4mJlZaQ4PMzMr7QczuolAYINg8wAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [217]:</div>
+<div class="prompt input_prompt">In [28]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">rowvar</span> <span class="o">=</span> <span class="mi">0</span><span class="p">))</span>
@@ -2779,7 +2788,7 @@ mYeZmZXm8DAzs9IcHmZmVprDw8zMSnN4mJlZaQ4PMzMr7QczuolAYINg8wAAAABJRU5ErkJggg==
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[217]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <table border="1" class="dataframe">
@@ -3077,14 +3086,11 @@ mYeZmZXm8DAzs9IcHmZmVprDw8zMSnN4mJlZaQ4PMzMr7QczuolAYINg8wAAAABJRU5ErkJggg==
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 </script>
-
-    </div><!-- /.entry-content -->
-
-  </article>
-</section>
+                </article>
+            </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">
-                        <h2>Useful External Links</h2>
+                        <h2>blogroll</h2>
                         <ul>
                             <li><a href="http://getpelican.com/">Pelican</a></li>
                             <li><a href="http://python.org/">Python.org</a></li>
@@ -3095,7 +3101,7 @@ mYeZmZXm8DAzs9IcHmZmVprDw8zMSnN4mJlZaQ4PMzMr7QczuolAYINg8wAAAABJRU5ErkJggg==
                         </ul>
                 </div><!-- /.blogroll -->
                 <div class="social">
-                        <h2>Andrew Burnie</h2>
+                        <h2>social</h2>
                         <ul>
 
                             <li><a href="https://uk.linkedin.com/in/apburnie">LinkedIn Profile</a></li>
