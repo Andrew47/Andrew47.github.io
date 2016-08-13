@@ -3,8 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>Data Manipulation with Pandas</title>
-        <link rel="stylesheet" href="http://Andrew47.github.io/theme/css/main.css" />
-        <link href="http://Andrew47.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Andrew's Data Science Blog Atom Feed" />
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,16 +12,16 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://Andrew47.github.io/">Andrew's Data Science Blog </a></h1>
+                <h1><a href="/">Andrew's Data Science Blog </a></h1>
                 <nav><ul>
-                    <li class="active"><a href="http://Andrew47.github.io/category/misc.html">misc</a></li>
+                    <li class="active"><a href="./index.html">Home</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://Andrew47.github.io/data-manipulation-with-pandas.html" rel="bookmark"
+        <a href="/data-manipulation-with-pandas.html" rel="bookmark"
            title="Permalink to Data Manipulation with Pandas">Data Manipulation with Pandas</a></h1>
     </header>
 
@@ -33,9 +32,8 @@
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="http://Andrew47.github.io/author/andrew-burnie.html">Andrew Burnie</a>
+                By                         Andrew Burnie
         </address>
-<p>In <a href="http://Andrew47.github.io/category/misc.html">misc</a>.</p>
 
 </footer><!-- /.post-info -->      <style type="text/css">/*!
 *
@@ -612,8 +610,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area 
-div.output_area 
+div.output_area
+div.output_area
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -873,7 +871,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered 
+.text_cell.rendered
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -2889,7 +2887,7 @@ Name: price, dtype: float64</pre>
 
 <span class="k">def</span> <span class="nf">usd_convert</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
     <span class="n">usd_price</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="mf">1.6</span>
-    <span class="n">str_usd_price</span> <span class="o">=</span> <span class="s1">'USD '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">usd_price</span><span class="p">)</span>   
+    <span class="n">str_usd_price</span> <span class="o">=</span> <span class="s1">'USD '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">usd_price</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">str_usd_price</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">usd_price</span><span class="p">))</span> <span class="o">>=</span> <span class="mi">4</span> <span class="k">else</span> <span class="n">str_usd_price</span> <span class="o">+</span> <span class="s1">'0'</span>
 
 <span class="n">frame</span><span class="p">[</span><span class="s1">'USD Price'</span><span class="p">]</span> <span class="o">=</span> <span class="n">frame</span><span class="p">[</span><span class="s1">'price'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">usd_convert</span><span class="p">)</span>
@@ -3868,7 +3866,7 @@ dtype: float64</pre>
 </section>
         <section id="extras" class="body">
                 <div class="blogroll">
-                        <h2>blogroll</h2>
+                        <h2>Useful External Links</h2>
                         <ul>
                             <li><a href="http://getpelican.com/">Pelican</a></li>
                             <li><a href="http://python.org/">Python.org</a></li>
@@ -3879,9 +3877,8 @@ dtype: float64</pre>
                         </ul>
                 </div><!-- /.blogroll -->
                 <div class="social">
-                        <h2>social</h2>
+                        <h2>Andrew Burnie</h2>
                         <ul>
-                            <li><a href="http://Andrew47.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
                             <li><a href="https://uk.linkedin.com/in/apburnie">LinkedIn Profile</a></li>
                             <li><a href="https://github.com/Andrew47">GitHub Profile</a></li>
