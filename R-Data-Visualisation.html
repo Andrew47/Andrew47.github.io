@@ -13,7 +13,7 @@
 
 
 
-    <link rel="stylesheet" href="//Andrew47.github.io/theme/css/style.css">
+    <link rel="stylesheet" href="/theme/css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -640,8 +640,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area
-div.output_area
+div.output_area 
+div.output_area 
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -901,7 +901,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered
+.text_cell.rendered 
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -1182,15 +1182,15 @@ diamonds
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>p <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span>p <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span> 
 
 <span class="c1">#Gives scatterplot:</span>
-
+  
   geom_point<span class="p">(</span>data <span class="o">=</span> diamonds
             <span class="p">,</span> aes<span class="p">(</span>x<span class="o">=</span>carat<span class="p">,</span> y<span class="o">=</span>price<span class="p">,</span> color<span class="o">=</span><span class="kp">factor</span><span class="p">(</span><span class="kp">cut</span><span class="p">)))</span> <span class="o">+</span>
-
+  
 <span class="c1">#Specify Labels:</span>
-
+  
   labs<span class="p">(</span>title <span class="o">=</span> <span class="s">"Cross-Section: Price vs Carat"</span>
        <span class="p">,</span> x <span class="o">=</span> <span class="s">"Carat"</span>
        <span class="p">,</span> y <span class="o">=</span> <span class="s">"Price"</span>
@@ -3740,10 +3740,10 @@ economics_long
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>p.line <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span>
-
+  
   geom_line<span class="p">(</span>data <span class="o">=</span> economics
             <span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> <span class="kp">date</span><span class="p">,</span> y <span class="o">=</span> pce
-                  <span class="p">,</span> color <span class="o">=</span> <span class="s">"Personal Consumption Expenditure"</span><span class="p">))</span>
+                  <span class="p">,</span> color <span class="o">=</span> <span class="s">"Personal Consumption Expenditure"</span><span class="p">))</span> 
 
 p.line
 </pre></div>
@@ -3947,9 +3947,9 @@ K6TXzzsb/jm91B4Q3EBICzzu/n49PW4jna//4XT6r/aA4AZCWuLt5+0B2V+n08u/nz/9/RnS
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>p.line <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span>
-
+  
   geom_line<span class="p">(</span>data <span class="o">=</span> economics
-            <span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> <span class="kp">date</span><span class="p">,</span> y <span class="o">=</span> pce<span class="p">,</span> color <span class="o">=</span> unemploy<span class="p">),</span> size <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+            <span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> <span class="kp">date</span><span class="p">,</span> y <span class="o">=</span> pce<span class="p">,</span> color <span class="o">=</span> unemploy<span class="p">),</span> size <span class="o">=</span> <span class="m">4</span><span class="p">)</span> 
 
 p.line
 </pre></div>
@@ -5445,7 +5445,7 @@ FNb4QAAAAABJRU5ErkJggg==">
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>p.contour <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span>p.contour <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span> 
 
 stat_density2d<span class="p">(</span>data <span class="o">=</span> diamonds
                <span class="p">,</span> aes<span class="p">(</span>x<span class="p">,</span> y<span class="p">,</span> z <span class="o">=</span> <span class="kp">cut</span><span class="p">(</span>price<span class="p">,</span> <span class="m">20</span><span class="p">),</span> colour <span class="o">=</span> <span class="m">..</span>z.. <span class="p">))</span> <span class="o">+</span>
@@ -5458,7 +5458,7 @@ labs<span class="p">(</span>title <span class="o">=</span> <span class="s">"The 
        <span class="p">,</span> x <span class="o">=</span> <span class="s">"x"</span>
        <span class="p">,</span> y <span class="o">=</span> <span class="s">"y"</span>
        <span class="p">,</span> color <span class="o">=</span> <span class="s">"price"</span><span class="p">)</span>
-
+  
 p.contour
 </pre></div>
 </div>
@@ -6110,7 +6110,7 @@ VSSQJAkggSRJAAkkSQJIIEkSQAJJkgASSJIEkECSJIAEkiQBJJAkCSCBJEkACSRJAkggSRJA
 <div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>p.contour <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span>p.contour <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span> 
 
   stat_density2d<span class="p">(</span>data <span class="o">=</span> diamonds
                  <span class="p">,</span> aes<span class="p">(</span>x<span class="p">,</span> y<span class="p">,</span>  z <span class="o">=</span> <span class="kp">cut</span><span class="p">(</span>price<span class="p">,</span> <span class="m">20</span><span class="p">),</span> fill <span class="o">=</span> <span class="m">..</span>z.. <span class="p">)</span>
@@ -6128,7 +6128,7 @@ VSSQJAkggSRJAAkkSQJIIEkSQAJJkgASSJIEkECSJIAEkiQBJJAkCSCBJEkACSRJAkggSRJA
 <span class="c1">#Altering the theme:</span>
    theme<span class="p">(</span>panel.background <span class="o">=</span> element_blank<span class="p">()</span>
         <span class="p">,</span> panel.grid.major <span class="o">=</span> element_line<span class="p">(</span>colour <span class="o">=</span> <span class="s">"grey88"</span><span class="p">))</span>
-
+  
 p.contour
 
 <span class="c1">#Note how we replace all references to 'colour' with 'fill'</span>
@@ -6522,8 +6522,8 @@ gggEkCCIQP8/bMXHPKbxrTEAAAAASUVORK5CYII=">
     </div>
   </div>
 </footer> <!-- /.footer -->
-  <script src="http://Andrew47.github.io/theme/js/jquery.min.js"></script>
-  <script src="http://Andrew47.github.io/theme/js/bootstrap.min.js"></script>
+  <script src="/theme/js/jquery.min.js"></script>
+  <script src="/theme/js/bootstrap.min.js"></script>
 </body> <!-- 42 -->
 
 </html>

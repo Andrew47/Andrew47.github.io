@@ -13,7 +13,7 @@
 
 
 
-    <link rel="stylesheet" href="//Andrew47.github.io/theme/css/style.css">
+    <link rel="stylesheet" href="/theme/css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -640,8 +640,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area
-div.output_area
+div.output_area 
+div.output_area 
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -901,7 +901,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered
+.text_cell.rendered 
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -1676,7 +1676,7 @@ dtype: int64</pre>
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'color'</span> <span class="p">:</span> <span class="p">{</span><span class="s1">'one'</span><span class="p">:</span> <span class="s1">'blue'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">:</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">:</span> <span class="s1">'yellow'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">:</span> <span class="s1">'red'</span><span class="p">,</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'color'</span> <span class="p">:</span> <span class="p">{</span><span class="s1">'one'</span><span class="p">:</span> <span class="s1">'blue'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">:</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">:</span> <span class="s1">'yellow'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">:</span> <span class="s1">'red'</span><span class="p">,</span> 
                     <span class="s1">'five'</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">},</span>
         <span class="s1">'object'</span> <span class="p">:</span> <span class="p">{</span><span class="s1">'one'</span><span class="p">:</span> <span class="s1">'ball'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">:</span> <span class="s1">'pen'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">:</span> <span class="s1">'pencil'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">:</span> <span class="s1">'paper'</span><span class="p">},</span>
         <span class="s1">'price'</span> <span class="p">:</span> <span class="p">{</span><span class="s1">'one'</span><span class="p">:</span> <span class="mf">1.2</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">,</span> <span class="s1">'five'</span><span class="p">:</span> <span class="mf">1.7</span><span class="p">}}</span>
@@ -2918,7 +2918,7 @@ Name: price, dtype: float64</pre>
 
 <span class="k">def</span> <span class="nf">usd_convert</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
     <span class="n">usd_price</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="mf">1.6</span>
-    <span class="n">str_usd_price</span> <span class="o">=</span> <span class="s1">'USD '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">usd_price</span><span class="p">)</span>
+    <span class="n">str_usd_price</span> <span class="o">=</span> <span class="s1">'USD '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">usd_price</span><span class="p">)</span>   
     <span class="k">return</span> <span class="n">str_usd_price</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">usd_price</span><span class="p">))</span> <span class="o">>=</span> <span class="mi">4</span> <span class="k">else</span> <span class="n">str_usd_price</span> <span class="o">+</span> <span class="s1">'0'</span>
 
 <span class="n">frame</span><span class="p">[</span><span class="s1">'USD Price'</span><span class="p">]</span> <span class="o">=</span> <span class="n">frame</span><span class="p">[</span><span class="s1">'price'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">usd_convert</span><span class="p">)</span>
@@ -3907,8 +3907,8 @@ dtype: float64</pre>
     </div>
   </div>
 </footer> <!-- /.footer -->
-  <script src="http://Andrew47.github.io/theme/js/jquery.min.js"></script>
-  <script src="http://Andrew47.github.io/theme/js/bootstrap.min.js"></script>
+  <script src="/theme/js/jquery.min.js"></script>
+  <script src="/theme/js/bootstrap.min.js"></script>
 </body> <!-- 42 -->
 
 </html>
