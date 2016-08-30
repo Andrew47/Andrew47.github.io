@@ -13,7 +13,7 @@
 
 
 
-    <link rel="stylesheet" href="http://Andrew47.github.io/theme/css/style.css">
+    <link rel="stylesheet" href="//Andrew47.github.io/theme/css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -640,8 +640,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area 
-div.output_area 
+div.output_area
+div.output_area
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -901,7 +901,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered 
+.text_cell.rendered
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -1126,13 +1126,13 @@ h6:hover .anchor-link {
                                          <span class="c1">#existing checking account</span>
                       <span class="s1">'Duration'</span><span class="p">,</span>        <span class="c1">#Duration is in months</span>
                      <span class="s1">'CreditHistory'</span><span class="p">,</span>    <span class="c1">#Credit History</span>
-                     <span class="s1">'Purpose'</span><span class="p">,</span>          
-                     <span class="s1">'CreditAmount'</span><span class="p">,</span>     
+                     <span class="s1">'Purpose'</span><span class="p">,</span>
+                     <span class="s1">'CreditAmount'</span><span class="p">,</span>
                      <span class="s1">'CreditRisk'</span><span class="p">]</span>       <span class="c1">#This is the target variable: </span>
                                          <span class="c1">#1 means good, 2 means bad</span>
 
 <span class="c1">#To display top 5 rows:</span>
-<span class="n">CreditData</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> 
+<span class="n">CreditData</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1393,7 +1393,7 @@ Number of good credit risk: 700
 <div class="prompt input_prompt">In [50]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">Scaled</span> <span class="o">=</span> <span class="n">CreditData</span><span class="p">[</span><span class="s1">'CreditHistory'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="s1">'A30'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">Scaled</span> <span class="o">=</span> <span class="n">CreditData</span><span class="p">[</span><span class="s1">'CreditHistory'</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="s1">'A30'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
                                           <span class="s1">'A31'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
                                           <span class="s1">'A32'</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
                                           <span class="s1">'A33'</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
@@ -1903,7 +1903,7 @@ Number of good credit risk: 700
                         <span class="s1">'CreditHistory'</span><span class="p">,</span>
                         <span class="s1">'Purpose'</span><span class="p">]:</span>
     <span class="n">feature_list</span> <span class="o">=</span> <span class="n">feature_list</span><span class="p">[</span><span class="n">feature_list</span> <span class="o">!=</span> <span class="n">removed_feature</span><span class="p">]</span>
-    
+
 <span class="n">feature_list</span> <span class="o">=</span> <span class="n">feature_list</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
 <span class="n">features</span> <span class="o">=</span> <span class="n">CreditData</span><span class="p">[</span><span class="n">feature_list</span><span class="p">]</span> <span class="c1">#extract feature data</span>
@@ -1930,7 +1930,7 @@ Number of good credit risk: 700
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 
-<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> 
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span>
                                                     <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2401,7 +2401,7 @@ Predicted Probability of Good is 0.336214760976; Bad is 0.663785239024
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">precision_recall_curve</span>
 
 <span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">thresholds</span> <span class="o">=</span>  <span class="n">precision_recall_curve</span><span class="p">(</span>
-                                   <span class="n">y_true</span> <span class="o">=</span> <span class="n">y_test</span><span class="p">,</span> 
+                                   <span class="n">y_true</span> <span class="o">=</span> <span class="n">y_test</span><span class="p">,</span>
                                    <span class="n">probas_pred</span> <span class="o">=</span> <span class="n">reg_1</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">x_test</span><span class="p">)[:,</span><span class="mi">1</span><span class="p">],</span>
                                    <span class="c1">#Note we need predicted probabilities</span>
                                  <span class="p">)</span>
@@ -2421,7 +2421,7 @@ Predicted Probability of Good is 0.336214760976; Bad is 0.663785239024
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">thresholds</span><span class="p">),</span> <span class="mi">50</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">text</span> <span class="p">(</span><span class="n">recall</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="n">precision</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">+</span><span class="mf">0.03</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">thresholds</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span> <span class="n">fontdict</span><span class="o">=</span><span class="n">font</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">recall</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="n">precision</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="s1">'bo'</span><span class="p">)</span>
- 
+
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -2780,9 +2780,9 @@ kyRpOIaTJGk4hpMkaTiGkyRpOIaTJGk4vwFwxcuBj1bZPgAAAABJRU5ErkJggg==
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>At lower threshold,
-High Recall: 
+High Recall:
 0.945945945946
-Low precision: 
+Low precision:
 0.37037037037
 </pre>
 </div>
@@ -2830,8 +2830,8 @@ Low precision:
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_prop_cycle</span><span class="p">(</span><span class="n">cycler</span><span class="p">(</span><span class="s1">'color'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'lightblue'</span><span class="p">,</span> <span class="s1">'darkblue'</span><span class="p">,</span> <span class="s1">'pink'</span><span class="p">,</span> <span class="s1">'darkred'</span><span class="p">,</span> 
-                                   <span class="s1">'lightgreen'</span><span class="p">,</span> <span class="s1">'darkgreen'</span><span class="p">,</span> <span class="s1">'gold'</span><span class="p">,</span> <span class="s1">'silver'</span><span class="p">,</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_prop_cycle</span><span class="p">(</span><span class="n">cycler</span><span class="p">(</span><span class="s1">'color'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'lightblue'</span><span class="p">,</span> <span class="s1">'darkblue'</span><span class="p">,</span> <span class="s1">'pink'</span><span class="p">,</span> <span class="s1">'darkred'</span><span class="p">,</span>
+                                   <span class="s1">'lightgreen'</span><span class="p">,</span> <span class="s1">'darkgreen'</span><span class="p">,</span> <span class="s1">'gold'</span><span class="p">,</span> <span class="s1">'silver'</span><span class="p">,</span>
                                    <span class="s1">'black'</span><span class="p">,</span> <span class="s1">'cyan'</span><span class="p">,</span> <span class="s1">'purple'</span><span class="p">,</span> <span class="s1">'orange'</span><span class="p">,</span> <span class="s1">'magenta'</span><span class="p">]))</span>
 
 <span class="c1">#Setting an array of c values to examine:</span>
@@ -2850,7 +2850,7 @@ Low precision:
 <span class="n">coefs_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">coefs_</span><span class="p">)</span> <span class="c1">#Convert list to array</span>
 
 <span class="c1">#Plot coefficient values against C:</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">cs</span><span class="p">),</span> <span class="n">coefs_</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">cs</span><span class="p">),</span> <span class="n">coefs_</span><span class="p">)</span>
 
 <span class="c1">#Label the graph:</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'log(C)'</span><span class="p">)</span>

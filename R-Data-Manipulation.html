@@ -13,7 +13,7 @@
 
 
 
-    <link rel="stylesheet" href="http://Andrew47.github.io/theme/css/style.css">
+    <link rel="stylesheet" href="//Andrew47.github.io/theme/css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -640,8 +640,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area 
-div.output_area 
+div.output_area
+div.output_area
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -901,7 +901,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered 
+.text_cell.rendered
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -1157,7 +1157,7 @@ i <span class="o">=</span> <span class="m">1</span>
 
   DF_1 <span class="o"><-</span> <span class="kt">data.frame</span><span class="p">(</span>V0 <span class="o">=</span> <span class="m">1</span><span class="o">:</span>rows<span class="p">,</span> V1 <span class="o">=</span> <span class="kp">rep</span><span class="p">(</span><span class="m">5</span><span class="p">,</span> rows<span class="p">),</span> V2 <span class="o">=</span> <span class="kp">rep</span><span class="p">(</span><span class="m">6</span><span class="p">,</span>rows<span class="p">))</span>
   DF_2 <span class="o"><-</span> <span class="kt">data.frame</span><span class="p">(</span>V0 <span class="o">=</span> <span class="m">1</span><span class="o">:</span>rows<span class="p">,</span> V3 <span class="o">=</span> <span class="kp">rep</span><span class="p">(</span><span class="m">7</span><span class="p">,</span> rows<span class="p">),</span> V4 <span class="o">=</span> <span class="kp">rep</span><span class="p">(</span><span class="m">8</span><span class="p">,</span>rows<span class="p">))</span>
-    
+
   DF_1a <span class="o"><-</span> DF_1
   DF_2a <span class="o"><-</span> DF_2
 
@@ -1166,11 +1166,11 @@ i <span class="o">=</span> <span class="m">1</span>
 
 <span class="c1">#base R</span>
   start <span class="o"><-</span> <span class="kp">Sys.time</span><span class="p">()</span>
-    
+
   DF_1a <span class="o"><-</span> <span class="kp">merge</span><span class="p">(</span>DF_1a<span class="p">,</span> DF_2a<span class="p">,</span> by <span class="o">=</span> <span class="s">"V0"</span><span class="p">,</span> all<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
-  
+
   <span class="kp">transform</span><span class="p">(</span>DF_1a<span class="p">,</span> sum <span class="o">=</span> V1<span class="o">+</span>V2<span class="p">)</span>
-  
+
   base.times<span class="p">[</span>i<span class="p">]</span> <span class="o"><-</span> <span class="p">(</span><span class="kp">Sys.time</span><span class="p">()</span> <span class="o">-</span> start<span class="p">)</span>
 
 <span class="c1">#dplyr way</span>
@@ -1192,7 +1192,7 @@ i <span class="o">=</span> <span class="m">1</span>
 
 <span class="c1">#Update index    </span>
   i <span class="o">=</span> i <span class="o">+</span> <span class="m">1</span>
-    
+
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1215,7 +1215,7 @@ i <span class="o">=</span> <span class="m">1</span>
 <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kn">library</span><span class="p">(</span>ggplot2<span class="p">)</span>
 
-plot <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span> geom_line<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> row.numbers<span class="p">,</span> y <span class="o">=</span> dplyr.times<span class="p">,</span> color <span class="o">=</span> <span class="s">"dplyr"</span><span class="p">))</span> <span class="o">+</span>  
+plot <span class="o"><-</span> ggplot<span class="p">()</span> <span class="o">+</span> geom_line<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> row.numbers<span class="p">,</span> y <span class="o">=</span> dplyr.times<span class="p">,</span> color <span class="o">=</span> <span class="s">"dplyr"</span><span class="p">))</span> <span class="o">+</span>
                    geom_line<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> row.numbers<span class="p">,</span> y <span class="o">=</span> data.table.times<span class="p">,</span> color <span class="o">=</span> <span class="s">"data.table"</span><span class="p">))</span> <span class="o">+</span>
                    geom_line<span class="p">(</span>aes<span class="p">(</span>x <span class="o">=</span> row.numbers<span class="p">,</span> y <span class="o">=</span> base.times<span class="p">,</span> color <span class="o">=</span> <span class="s">"base R"</span><span class="p">))</span> <span class="o">+</span>
         labs <span class="p">(</span>x <span class="o">=</span> <span class="s">"Number of Rows in Dataset"</span><span class="p">,</span>
@@ -3868,8 +3868,8 @@ data.table.2a <span class="o"><-</span> data.table<span class="p">(</span>frame2
   frame1 <span class="o">%>%</span> <span class="kp">merge</span><span class="p">(</span>frame2<span class="p">,</span> by <span class="o">=</span> <span class="s">"id"</span><span class="p">,</span> all <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
 
 <span class="kp">print</span><span class="p">(</span><span class="s">"MATCH ID WITH IDENTIFICATION"</span><span class="p">)</span>
-  frame1 <span class="o">%>%</span> <span class="kp">merge</span><span class="p">(</span>frame2a<span class="p">,</span> 
-                   all <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> 
+  frame1 <span class="o">%>%</span> <span class="kp">merge</span><span class="p">(</span>frame2a<span class="p">,</span>
+                   all <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
                    by.x <span class="o">=</span> <span class="s">"id"</span><span class="p">,</span>
                    by.y <span class="o">=</span> <span class="s">"identification"</span><span class="p">)</span>
 </pre></div>
@@ -4011,7 +4011,7 @@ data.table.2a <span class="o"><-</span> data.table<span class="p">(</span>frame2
   frame1 <span class="o">%>%</span> full_join<span class="p">(</span>frame2<span class="p">,</span> by<span class="o">=</span><span class="s">"id"</span><span class="p">)</span>
 
 <span class="kp">print</span><span class="p">(</span><span class="s">"MATCH ID WITH IDENTIFICATION"</span><span class="p">)</span>
-  frame1 <span class="o">%>%</span> inner_join<span class="p">(</span>frame2a<span class="p">,</span> 
+  frame1 <span class="o">%>%</span> inner_join<span class="p">(</span>frame2a<span class="p">,</span>
                         by<span class="o">=</span><span class="kt">c</span><span class="p">(</span><span class="s">"id"</span> <span class="o">=</span> <span class="s">"identification"</span><span class="p">))</span>
 </pre></div>
 </div>

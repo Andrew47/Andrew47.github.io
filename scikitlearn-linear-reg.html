@@ -13,7 +13,7 @@
 
 
 
-    <link rel="stylesheet" href="http://Andrew47.github.io/theme/css/style.css">
+    <link rel="stylesheet" href="//Andrew47.github.io/theme/css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -640,8 +640,8 @@ div.output_area {
 div.output_area .MathJax_Display {
   text-align: left !important;
 }
-div.output_area 
-div.output_area 
+div.output_area
+div.output_area
 div.output_area img,
 div.output_area svg {
   max-width: 100%;
@@ -901,7 +901,7 @@ h6:hover .anchor-link {
 .text_cell.rendered .input_area {
   display: none;
 }
-.text_cell.rendered 
+.text_cell.rendered
 .text_cell.unrendered .text_cell_render {
   display: none;
 }
@@ -1166,7 +1166,7 @@ Click on the links below to skip to that section:</p>
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 
-<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">boston</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> 
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">boston</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">boston</span><span class="o">.</span><span class="n">target</span><span class="p">,</span>
                                                     <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1889,7 +1889,7 @@ Prediction for first house in test dataset: [ 24.960623]
 <div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x_train_2</span><span class="p">,</span> <span class="n">x_valid</span><span class="p">,</span> <span class="n">y_train_2</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x_train_2</span><span class="p">,</span> <span class="n">x_valid</span><span class="p">,</span> <span class="n">y_train_2</span><span class="p">,</span> <span class="n">y_valid</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
                                                           <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2447,7 +2447,7 @@ Prediction for first house in test dataset: [ 24.49035948]
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.cm</span> <span class="kn">as</span> <span class="nn">cm</span>
 
 
-<span class="n">alphas_lasso</span><span class="p">,</span> <span class="n">coeffs_lasso</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">lasso_path</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> 
+<span class="n">alphas_lasso</span><span class="p">,</span> <span class="n">coeffs_lasso</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">lasso_path</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
                                                         <span class="n">eps</span> <span class="o">=</span> <span class="mf">0.001</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"-Log(alpha)"</span><span class="p">)</span>
@@ -2455,7 +2455,7 @@ Prediction for first house in test dataset: [ 24.49035948]
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_color_cycle</span><span class="p">([</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span> <span class="o">+</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_color_cycle</span><span class="p">([</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">20</span><span class="p">)]</span> <span class="o">+</span>
                    <span class="p">[</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">140</span><span class="p">,</span> <span class="mi">280</span><span class="p">,</span> <span class="mi">20</span><span class="p">)])</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">alphas_lasso</span><span class="p">),</span> <span class="n">coeffs_lasso</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
@@ -3213,8 +3213,8 @@ Prediction for first house in test dataset: [ 24.2913771]
 <div class="prompt input_prompt">In [31]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_elastic_net_CV</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">ElasticNetCV</span><span class="p">(</span><span class="n">eps</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> 
-                                               <span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">],</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">reg_elastic_net_CV</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">ElasticNetCV</span><span class="p">(</span><span class="n">eps</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">n_alphas</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+                                               <span class="n">alphas</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">],</span>
                                                <span class="n">l1_ratio</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
                                                <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">reg_elastic_net_CV</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
