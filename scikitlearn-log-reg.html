@@ -1063,7 +1063,6 @@ h6:hover .anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We use German Credit Data provided by the UCI Machine Lerning Repository <a href="http://archive.ics.uci.edu/ml">(Lichman, 2013)</a>. Here we are seeking to predict whether the customer is a good or a bad credit risk.</p>
-<p>We will use the version created by Strathclyde University, which converts the categorical variables into numeric.</p>
 <p>First we import useful modules:</p>
 </div>
 </div>
@@ -2816,7 +2815,7 @@ Low precision:
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>With the <a href="https://andrew47.github.io/pages/scikitlearn-regression.html">linear regression models</a>, with had a tuning parameter <code>alpha</code> used to control the degree of regularisation. We also used this parameter in the lasso regression to find those most important features that are most robust to increasing the tuning parameter.</p>
 <p>With logistic regression in scikit-learn we have a similar parameter <code>C</code>, which has a similar purpose to <code>alpha</code>, except the <strong>smaller</strong> <code>C</code> is, the <strong>more</strong> regularisation.</p>
-<p>As with lasso regression, we can draw a coefficient path:</p>
+<p>As with <a href="https://andrew47.github.io/scikitlearn-linear-reg.html#lasso">lasso regression</a>, we can draw a coefficient path:</p>
 </div>
 </div>
 </div>
@@ -3308,6 +3307,15 @@ iEhclEBERCQuSiAiIhIXJRAREYmLEoiIiMRFCUREROLy/ygmTauCNGumAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Note that the above is for illustrative purposes only. In practice, before applying a lasso regression, we would need to standardise the features such that they were on the same scale.</strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>The most robust feature to increasing <code>C</code> is <code>ScaledCreditHistory</code>. The above coefficient path also suggests that being overdrawn raises credit risk and borrowing to fund a used car reduces credit risk (holding everything else fixed).</p>
 <p>Strangely, the poorer the credit history, the lower the probability of a bad credit risk. As we are using a very simple model, with few included features, this odd result could be due to omitted variable bias, with a poor credit history acting as a proxy for an excluded variable that improves credit risk. For example, perhaps someone with a poorer credit history might be more reluctant to borrow, unless they are sure they can pay back the money. Alternatively, the results may be being skewed by the dominance of <code>A32</code> in the dataset (over 50% of customers):</p>
 </div>
@@ -3423,6 +3431,8 @@ hhniktQwQ1ySGmaIS1LDDHFJapghLkkN+39qnexNyHpoFwAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 style="text-align: center">Resources Used</h2><ul>
+<li><p>Crone, S.F., Finlay, S., 2012. "Instance sampling in credit scoring: An empirical study of sample size and balancing". <em>International Journal of Forecasting</em>, 28(1), pp. 224–238. Available online as a pdf <a href="http://www.sciencedirect.com/science/article/pii/S0169207011001403">here</a></p>
+</li>
 <li><p>German Credit Data sourced from <a href="https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29">The UCI Machine Learning Repository</a></p>
 </li>
 <li><p>Lichman, M. (2013). UCI Machine Learning Repository [<a href="http://archive.ics.uci.edu/ml">http://archive.ics.uci.edu/ml</a>]. Irvine, CA: University of California, School of Information and Computer Science.</p>
