@@ -3308,7 +3308,8 @@ iEhclEBERCQuSiAiIhIXJRAREYmLEoiIiMRFCUREROLy/ygmTauCNGumAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The most robust feature to increasing <code>C</code> is <code>ScaledCreditHistory</code>. The higher this variable, the poorer the credit history. This suggests that a poorer credit history was associated with a higher probability of a bad credit risk. The above coefficient path also supports being overdrawn as raising credit risk and borrowing to fund a used car as reducing credit risk (holding everything else fixed).</p>
+<p>The most robust feature to increasing <code>C</code> is <code>ScaledCreditHistory</code>. The above coefficient path also suggests that being overdrawn raises credit risk and borrowing to fund a used car reduces credit risk (holding everything else fixed).</p>
+<p>Strangely, the poorer the credit history, the lower the probability of a bad credit risk. As we are using a very simple model, with few included features, this odd result could be due to omitted variable bias, with a poor credit history acting as a proxy for an excluded variable that improves credit risk. For example, perhaps someone with a poorer credit history might be more reluctant to borrow, unless they are sure they can pay back the money. Alternatively, the results may be being skewed by the dominance of <code>A32</code> in the dataset (over 50% of customers):</p>
 </div>
 </div>
 </div>
