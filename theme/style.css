@@ -52,6 +52,8 @@ body{
     border: 2px solid silver;
     position:fixed ;
     width: 100%;
+    top:95%;
+    transform:translate(0,-95%);
 }
 
 .tabs a{
