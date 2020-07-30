@@ -1,13 +1,8 @@
 h1{
     color: rgb(33,47,114);
-    font-size:5vw;
+    font-size:7vh;
     text-align: center;
-}
-
-h2{
-    font-size:3vw;
-    text-align: center;
-
+    padding-bottom: 10vh;
 }
 
 a {
@@ -43,12 +38,20 @@ body{
     padding-top: 0%;
 }
 
-#sec3, #sec5 {
+.secEven {
+    background-color: rgb(33,47,114);
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2vh;
+    color: rgb(213,240,247);
+}
+
+.secOdd {
     background-color: rgb(213,240,247);
     color: rgb(33,47,114);
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 1.7vw;
+    font-size: 2vh;
 }
 
 .tabs{
@@ -56,9 +59,11 @@ body{
     background-color:white;
     border: 2px solid silver;
     position:fixed ;
-    width: 100vw;
+    width: 85vw;
     top:99%;
+    left:7.5%;
     transform:translate(0,-99%);
+    padding-left: 1em;
 }
 
 .tabs a{
@@ -79,34 +84,33 @@ body{
     color: orange;
 }
 
-#sec2, #sec4, #sec6 {
-    background-color: rgb(33,47,114);
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 1.7vw;
-    color: rgb(213,240,247);
-}
+
 
 
 .list{
-    font-size:1em;
+    font-size:2vh;
     text-align:center;
     padding-right:10%;
     padding-left:10%;
+}
+
+li {
+    padding-bottom:2em;
 }
 
 #logo {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    height: 70vh;
-    width: 60vw;
 }
 
 #tagline {
     border: 5px solid silver;
-    width: 300px;
-    height: 150px;
+    width: 90vw;
+    height: 30vh;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #webFields {
