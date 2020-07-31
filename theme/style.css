@@ -2,7 +2,7 @@ h1{
     color: rgb(33,47,114);
     font-size:7vh;
     text-align: center;
-    padding-bottom: 10vh;
+    padding-bottom: 2vh;
 }
 
 a {
@@ -38,6 +38,7 @@ body{
     padding-top: 0%;
 }
 
+
 .secEven {
     background-color: rgb(33,47,114);
     padding-left: 10%;
@@ -59,21 +60,25 @@ body{
     background-color:white;
     border: 2px solid silver;
     position:fixed ;
-    width: 85vw;
-    top:99%;
-    left:7.5%;
-    transform:translate(0,-99%);
+    width: 95vw;
+    top:95%;
+    left:1%;
+    transform:translate(0,-95%);
     padding-left: 1em;
 }
 
 .tabs a{
     color:rgb(33,47,114);
-    font-size:2vw;
+    font-size:1em;
 }
 
 .tabs a:hover{
     color:darkgrey;
-    font-size:2vw;
+    font-size:1em;
+}
+
+.RepDDLink {
+    color:darkred;
 }
 
 #pubList a{
@@ -104,10 +109,18 @@ li {
     margin-right:auto;
 }
 
+#logotag {
+    width: 30vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:3em;
+}
+
 #tagline {
     border: 5px solid silver;
-    width: 90vw;
-    height: 30vh;
+    width: 70vw;
+    height: 25vh;
     display:block;
     margin-left:auto;
     margin-right:auto;
