@@ -24,12 +24,18 @@ html,body
     scroll-snap-align: start;
 }
 
+section h2 {
+    font-size: max(4vh, 1.6em);
+
+}
+
 section {
     padding-block-start: 0%;
     margin-block-start: 0%;
     height: 120vh;
     width: 100vw;
     scroll-snap-align: start;
+    font-size: max(2.3vh, 0.8em);
 }
 
 
@@ -38,6 +44,10 @@ h1{
     font-size:7vh;
     text-align: center;
     padding-bottom: 2vh;
+}
+
+p{
+    margin-bottom:0.5em;
 }
 
 a {
@@ -77,8 +87,10 @@ li{
 }
 
 .navIcon {
-    padding-right:0em;
-    padding-left:0em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    padding-top:0.1em;
+    padding-bottom:0.1em;
 }
 
 .navIconUp {
@@ -94,7 +106,7 @@ li{
     border: 2px solid silver;
     position:fixed ;
     width: 100vw;
-    top:95%;
+    top:98%;
     transform:translate(0,-95%);
     display: block;
     max-width: 100%;
