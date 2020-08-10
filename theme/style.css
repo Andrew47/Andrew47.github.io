@@ -58,11 +58,7 @@ a:hover{
 }
 
 li{
-    padding-bottom:2em;
-    font-size: 1em;
-    position:relative;
-    top:50%;transform:
-    translate(0,-50%);
+    padding:1em;
 }
 
 #sec1 {
@@ -72,14 +68,24 @@ li{
 
 .secEven {
     background-color: rgb(33,47,114);
-    font-size: 2vh;
     color: rgb(213,240,247);
 }
 
 .secOdd {
     background-color: rgb(213,240,247);
     color: rgb(33,47,114);
-    font-size: 2vh;
+}
+
+.navIcon {
+    padding-right:0em;
+    padding-left:0em;
+}
+
+.navIconUp {
+    padding-left:0.5em;
+    padding-right:0em;
+    margin-left:0em;
+    margin-right:0em;
 }
 
 .tabs{
@@ -92,6 +98,7 @@ li{
     transform:translate(0,-95%);
     display: block;
     max-width: 100%;
+    
 }
 
 .tabs a{
